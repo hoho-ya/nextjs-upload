@@ -13,7 +13,7 @@ const SearchForm = ({}) => {
 
   return (
     <form action={handleSearch}>
-      <input type="search" name="search" defaultValue={query.search || ''} />
+      <input type="search" name="search" defaultValue={query.search || ''} aria-label="search" />
       <ButtonSubmit value="search" />
     </form>
   );

@@ -34,6 +34,7 @@ const PostForm = () => {
           placeholder="title"
           required
           defaultValue={editPost?.title}
+          aria-label="title"
         />
         <input
           type="text"
@@ -41,6 +42,7 @@ const PostForm = () => {
           placeholder="image"
           required
           defaultValue={editPost?.image}
+          aria-label="image"
         />
         {editPost ? (
           <>

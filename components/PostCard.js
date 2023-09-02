@@ -11,7 +11,7 @@ const PhotoCard = ({ post, handleDelete }) => {
   return (
     <div>
       <Link href={`/post/${post._id}`}>
-        <Image alt="" src={post?.image} width={200} height={200} />
+        <Image src={post?.image} width={200} height={200} size="20vw" alt="image" />
         <h3>{post?.title}</h3>
       </Link>
       <div style={{ display: 'flex', gap: '10px' }}>

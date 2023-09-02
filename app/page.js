@@ -8,6 +8,17 @@ import { getAllPosts } from '@/actions/postActions';
 import Feature from '@/components/Feature';
 import Pagination from '@/components/Pagination';
 
+export const metadata = {
+  title: 'Home Page',
+  description: 'This is my home page',
+  alternates: {
+    canonical: '/',
+    languages: {
+      en: '/en',
+    },
+  },
+};
+
 const Home = async ({ params, searchParams }) => {
   const photos = await getAllPhoto();
   const { posts, totalPage } = await getAllPosts(searchParams);
